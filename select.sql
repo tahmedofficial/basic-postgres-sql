@@ -76,6 +76,39 @@ SELECT count(*) FROM students;
 
 SELECT max(length(first_name)) FROM students;
 
+SELECT * FROM students WHERE NOT country='USA' 
+
+SELECT * FROM students WHERE email= 'jane.smith@example.com';
+
+SELECT * FROM students WHERE email IS not NULL;
+
+SELECT COALESCE(email,'N/A'), country FROM students
+
+SELECT * FROM students WHERE country = 'USA' or country = 'Australia' or country = 'Canada'
+
+SELECT * FROM students WHERE country IN('USA', 'UK')
+
+SELECT * FROM students WHERE country NOT IN('USA', 'UK')
+
+SELECT * FROM students WHERE age BETWEEN 19 AND 26
+
+SELECT * FROM students WHERE birth_date BETWEEN '2001-01-01' AND '2005-01-01'  ORDER BY birth_date;
+
+SELECT * FROM students WHERE first_name LIKE '__a__'
+
+SELECT * FROM students WHERE first_name ILIKE 'a%'
+
+SELECT * FROM students LIMIT 5 OFFSET 5*2
+
+SELECT * FROM students WHERE country in('UK', 'USA') LIMIT 5
+
+SELECT * FROM students;
+
+DELETE FROM students WHERE grade = 'B' AND country = 'USA';
+
+UPDATE students SET email = 'tanvir@gmail.com', first_name = 'Tanvir' WHERE student_id = 62;
+
+
 
 
 
