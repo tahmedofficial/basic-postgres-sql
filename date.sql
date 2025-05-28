@@ -33,6 +33,10 @@ SELECT * FROM students
 
 SELECT *, age(CURRENT_DATE, birth_date) FROM students;
 
+SELECT extract(YEAR FROM '2025-01-25'::date)
+
+SELECT 'y'::BOOLEAN
+
 
 
 

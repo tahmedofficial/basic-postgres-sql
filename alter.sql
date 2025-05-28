@@ -20,6 +20,8 @@ ALTER Table person2 alter COLUMN user_age DROP NOT NULL;
 ALTER Table person2
     ADD constraint unique_person2_user_age UNIQUE(user_age);
 
+SELECT * FROM person2
+
 ALTER TABLE person2
     DROP constraint unique_person2_user_age;
 
