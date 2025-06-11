@@ -6,4 +6,11 @@ SELECT * FROM post LEFT JOIN "user" on post.user_id = "user".id;
 
 SELECT * FROM post RIGHT JOIN "user" on post.user_id = "user".id;
 
+SELECT * FROM post FULL JOIN "user" on post.user_id = "user".id;
+
+
+
+
+
+
 
