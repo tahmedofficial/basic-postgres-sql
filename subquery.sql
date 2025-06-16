@@ -10,6 +10,19 @@ CREATE Table employees (
 
 DROP Table employees
 
+INSERT INTO employees (employee_name, department_name, salary, hire_date) VALUES 
+('Alice Johnson', 'HR', 52000.00, '2020-03-15'),
+('Bob Smith', 'IT', 75000.00, '2019-07-22'),
+('Charlie Davis', 'Finance', 68000.00, '2021-01-10'),
+('Diana Ross', 'Marketing', 60000.00, '2018-05-12'),
+('Ethan Brown', 'Sales', 72000.00, '2022-09-05'),
+('Fiona Adams', 'IT', 79000.00, '2020-11-30'),
+('George Wilson', 'HR', 51000.00, '2023-02-18'),
+('Hannah Moore', 'Finance', 67000.00, '2017-08-24'),
+('Ian Taylor', 'Marketing', 58000.00, '2021-06-19'),
+('Julia Clark', 'Sales', 73000.00, '2019-04-01');
+
+
 INSERT INTO
     employees (
         employee_name,
